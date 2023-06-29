@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+      <h1>Меню</h1>
+    </header>
+    <main>
+      <form onsubmit="calculateTotal(event)">
+        <h2>Пиццы:</h2>
+          <label><input type="number" min="0" name="Пепперони" value="0"> Пицца Пепперони (400 рублей)</label><br>
+          <label><input type="number" min="0" name="Гавайская" value="0"> Пицца Гавайская (350 рублей)</label><br>
+          <label><input type="number" min="0" name="Мясная" value="0"> Пицца Мясная (500 рублей)</label><br>
+          <label><input type="number" min="0" name="Домашняя" value="0"> Пицца Домашняя (480 рублей)</label><br>
+        <h2>Напитки:</h2>
+          <label><input type="number" min="0" name="Буратино" value="0"> Напиток Буратино (50 рублей)</label><br>
+          <label><input type="number" min="0" name="Колокольчик" value="0"> Напиток Колокольчик (75 рублей)</label><br>
+          <label><input type="number" min="0" name="Sprite" value="0"> Напиток Спрайт (100 рублей)</label><br>
+          <button type="submit">Заказать</button>
+      </form>
+    </main>
+    <footer>
+      <div id="result"></div>
+    </footer>   
+	<script src="scriptfull.js"></script>
+</body>
+</html>
